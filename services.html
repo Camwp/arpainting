@@ -4,237 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interior Painting Services | Services</title>
+    <meta name="description" content="A&R Painting | Contact Us">
+    <meta property="og:title" content="A&R Painting" />
+    <meta property="og:type" content="logo-icon.webp" />
+    <meta property="og:url" content="https://camwp.github.io/wdd131/final/final.html/" />
+    <meta property="og:image" content="https://camwp.github.io/wdd131/final/images/common/site_logo.webp" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>A&R Painting | Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="icon" href="images/common/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/services-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/services.js" defer></script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Interior Painting</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    <header>
+        <section class="navsec">
+            <div>
+                <a href="index.html"><img src="images/common/logo.webp" alt="Green Spaces Painting logo" height="100"
+                        width="250" class="iconlogo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html">OUR WORK</a></li>
+                    <li><a href="services.html" class="active">SERVICES</a></li>
+                    <li><a href="learnmore.html">LEARN MORE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
-            </div>
+            </nav>
+        </section>
+        <div class="menu-toggle">
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
+            <div class="menu-icon"></div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Services</h2>
-            <p class="lead text-center mb-4">We offer a comprehensive range of painting services to meet all your needs.
-            </p>
-
-            <div class="row">
-                <!-- Service 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="assets/images/service1.jpg" class="card-img-top" alt="Residential Painting">
-                        <div class="card-body">
-                            <h3 class="card-title">Residential Painting</h3>
-                            <button class="btn btn-secondary w-100" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#service1Details" aria-expanded="false" aria-controls="service1Details">
-                                More Details
-                            </button>
-                            <div class="collapse mt-3" id="service1Details">
-                                <div class="card card-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><strong>Custom Color Consultations:</strong> We
-                                            offer personalized color consultations to achieve your desired look.</li>
-                                        <li class="list-group-item"><strong>Surface Preparation:</strong> Thorough
-                                            preparation to ensure a smooth and durable finish.</li>
-                                        <li class="list-group-item"><strong>Flawless Finishes:</strong> We deliver
-                                            high-quality finishes that enhance the beauty of your home.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="assets/images/service2.jpg" class="card-img-top" alt="Commercial Painting">
-                        <div class="card-body">
-                            <h3 class="card-title">Commercial Painting</h3>
-                            <button class="btn btn-secondary w-100" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#service2Details" aria-expanded="false" aria-controls="service2Details">
-                                More Details
-                            </button>
-                            <div class="collapse mt-3" id="service2Details">
-                                <div class="card card-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><strong>Efficient Project Management:</strong> We
-                                            manage projects efficiently to minimize disruption.</li>
-                                        <li class="list-group-item"><strong>High-Quality Finishes:</strong> Delivering
-                                            professional results that enhance your business environment.</li>
-                                        <li class="list-group-item"><strong>On-Time and On-Budget:</strong> Ensuring
-                                            timely and budget-friendly service.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="assets/images/service3.jpg" class="card-img-top" alt="Specialty Finishes">
-                        <div class="card-body">
-                            <h3 class="card-title">Specialty Finishes</h3>
-                            <button class="btn btn-secondary w-100" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#service3Details" aria-expanded="false" aria-controls="service3Details">
-                                More Details
-                            </button>
-                            <div class="collapse mt-3" id="service3Details">
-                                <div class="card card-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><strong>Faux Finishes:</strong> Creative finishes
-                                            that mimic the appearance of other materials.</li>
-                                        <li class="list-group-item"><strong>Textured Walls:</strong> Adding texture to
-                                            walls for a unique and personalized look.</li>
-                                        <li class="list-group-item"><strong>Custom Artistic Effects:</strong> Tailored
-                                            artistic finishes to enhance your interior design.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="img-Header" alt="services we offer"
+        style="background-image: url('images/services/servicesheader1.jpg');">
+        <div>
+            <p>SERVICES WE OFFER</p>
+            <img id="header-border" alt="header-border" src="images/common/headerbordertest.png">
+        </div>
+    </section>
+    <section id="header-info">
+        <div>
+            <h3>OUR PROFESSIONAL SERVICES</h3>
+            <p>With leaders that have many years of experience
+                and a multi-disciplinary team, we can manage and streamline your
+                painting project, minimizing costs and time.</p>
         </div>
     </section>
 
-    <!-- Cost Information Section -->
-    <section id="costs" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Understanding the Costs</h2>
-            <p class="lead text-center mb-4">The cost to paint the interior of a house in California varies depending on
-                several factors. Here’s a breakdown to help you make an informed decision:</p>
-
-            <div class="row">
-                <!-- Average Costs -->
-                <div class="col-md-6 mb-4">
-                    <h3>Average Costs</h3>
-                    <p><strong>Per Square Foot</strong>: $2.00 - $6.00</p>
-                    <p><strong>Typical Average</strong>: $3.75 per square foot</p>
-                </div>
-
-                <!-- Cost Estimates by Square Footage -->
-                <div class="col-md-6 mb-4">
-                    <h3>Cost Estimates by Square Footage</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>1200 Square Feet</strong>: $2,400 - $7,200</li>
-                        <li class="list-group-item"><strong>1500 Square Feet</strong>: $3,000 - $9,000</li>
-                        <li class="list-group-item"><strong>3000 Square Feet</strong>: $6,000 - $18,000</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- DIY vs. Professional Costs -->
-                <div class="col-md-6 mb-4">
-                    <h3>DIY vs. Professional</h3>
-                    <h4>DIY Costs:</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>Paint Gallons</strong>: $20 - $45 per gallon</li>
-                        <li class="list-group-item"><strong>Painting Equipment</strong>: $100 - $300</li>
-                        <li class="list-group-item"><strong>Additional Costs</strong>: Varies based on paint quality,
-                            room features, and prep work</li>
-                    </ul>
-
-
-                </div>
-
-                <!-- Room-Specific Costs -->
-                <div class="col-md-6 mb-4">
-                    <h3>Room-Specific Costs</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>Bedrooms</strong>: $350 - $1,500</li>
-                        <li class="list-group-item"><strong>Bathrooms</strong>: $100 - $300</li>
-                        <li class="list-group-item"><strong>Kitchens</strong>: $250 - $850</li>
-                        <li class="list-group-item"><strong>Dining Rooms</strong>: $500 - $900</li>
-                        <li class="list-group-item"><strong>Stairwells</strong>: $20 - $35 per linear foot</li>
-                        <li class="list-group-item"><strong>Living Rooms</strong>: $600 - $1,500</li>
-                        <li class="list-group-item"><strong>Hallways</strong>: $200 - $800</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h3>Factors Affecting Cost</h3>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Location:</strong> Costs can vary based on the region and city.</li>
-                <li class="list-group-item"><strong>Wall Condition:</strong> The condition of your walls and the level
-                    of preparation needed.</li>
-                <li class="list-group-item"><strong>Paint Quality:</strong> Higher quality paints tend to be more
-                    expensive.</li>
-                <li class="list-group-item"><strong>Room Size and Layout:</strong> Larger or more complex spaces may
-                    cost more.</li>
+    <section id="our-services">
+        <div>
+            <h1>COMPREHENSIVE PAINTING SERVICES</h1>
+            <ul id="mainDropdownUL">
+                <li id="mainDropdownLI">
+                    <input type="checkbox" class="toggleCheckbox" checked>
+                    <i></i>
+                    <h2>INTERIOR PAINTING</h2>
+                    <p style="font-weight: 550;">Our interior painting services transform your home’s living spaces with
+                        precise, professional application and a keen eye for detail.</p>
+                    <p id="bulletList">Wall and Ceiling Painting</p>
+                    <p id="bulletList">Trim and Molding</p>
+                    <p id="bulletList">Cabinet Refinishing</p>
+                    <p id="bulletList">Color Consultation</p>
+                </li>
+                <li id="mainDropdownLI">
+                    <input type="checkbox" class="toggleCheckbox" checked>
+                    <i></i>
+                    <h2>EXTERIOR PAINTING</h2>
+                    <p style="font-weight: 550;">Our exterior painting services ensure your home stands out with a
+                        fresh, durable finish that protects against the elements.</p>
+                    <p id="bulletList">Complete Exterior Painting</p>
+                    <p id="bulletList">Deck and Fence Staining</p>
+                    <p id="bulletList">Siding and Trim Painting</p>
+                    <p id="bulletList">Pressure Washing</p>
+                </li>
+                <li id="mainDropdownLI">
+                    <input type="checkbox" class="toggleCheckbox" checked>
+                    <i></i>
+                    <h2>COMMERCIAL PAINTING</h2>
+                    <p style="font-weight: 550;">Our commercial painting services cater to businesses of all sizes,
+                        delivering professional results that enhance your property’s appeal.</p>
+                    <p id="bulletList">Office Spaces</p>
+                    <p id="bulletList">Retail Stores</p>
+                    <p id="bulletList">Industrial Buildings</p>
+                    <p id="bulletList">Exterior and Interior Finishes</p>
+                </li>
+                <li id="mainDropdownLI">
+                    <input type="checkbox" class="toggleCheckbox" checked>
+                    <i></i>
+                    <h2>FULL SERVICE</h2>
+                    <p style="font-weight: 550;">We offer a full suite of painting services from initial consultation to
+                        final inspection, ensuring your project is completed with excellence.</p>
+                    <p id="bulletList">Detailed Project Planning</p>
+                    <p id="bulletList">Surface Preparation</p>
+                    <p id="bulletList">Color Matching</p>
+                    <p id="bulletList">Post-Painting Cleanup</p>
+                </li>
             </ul>
-
         </div>
-        <div style="margin: auto;text-align: center; padding-top: 10px;">
-            <p><strong>Quality finishes and more complex jobs will cost more</strong></p>
-        </div>
-
     </section>
 
 
-    <!-- Process Section -->
-    <section id="process" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Our 14-Step Painting Process</h2>
-            <p class="lead text-center mb-4">Our meticulous process ensures high-quality results for both interior and
-                exterior painting projects.</p>
+    <section id="split-image">
+        <div>
+            <img src="images/services/DJI_0068.jpeg" style=" background-position: center bottom;"
+                alt="Painting Example">
+        </div>
+    </section>
 
-            <li class="list-group-item">
+    <section id="industries">
+        <div>
+            <h2>INDUSTRIES WE SERVE</h2>
+            <ul>
+                <li>Residential</li>
+                <li>Commercial</li>
+                <li>Industrial</li>
+                <li>Public Buildings</li>
+                <li>Educational Institutions</li>
+                <li>Healthcare Facilities</li>
+                <li>Retail Centers</li>
+            </ul>
+            <hr>
+            <h4>SPECIAL PROJECTS</h4>
+            <ul>
+                <li>Historic Building Restoration</li>
+                <li>Custom Murals</li>
+                <li>Decorative Finishes</li>
+                <li>Eco-Friendly Paint Solutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contactSection">
+        <h3>Contact us about your next painting project</h3>
+        <button><a href="contact.html" id="contact-button">CONTACT US</a></button>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
                 <div>
-                    <strong>Pressure Wash:</strong> We’ll pressure wash the exterior of the house from top to bottom to
-                    remove all dirt, debris, and cobwebs.
+                    <div class="footer-content">
+                        <div class="footer-left">
+                            <a href="index.html"><img src="images/common/logo.webp" class="footer-logo" alt=""></a>
+                            <p>123 Lombard St,<br />San Francisco, California 94109<br /><br /><a
+                                    href="tel:(123) 456-7890" id="footerNumber">+1 (123) 456-7890</a></p>
+
+                        </div>
+
+                        <div class="footer-menu">
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+
+                        <div class="social-items">
+                            <a href="https://www.facebook.com/" target="_blank" class="social-icon"><img
+                                    src="images/common/icon-facebook.png" alt="Facebook"></a>
+                            <a href="https://www.youtube.com/" target="_blank" class="social-icon"><img
+                                    src="images/common/icon-youtube.png" alt="YouTube"></a>
+                            <a href="https://www.linkedin.com/company/" target="_blank" class="social-icon"><img
+                                    src="images/common/icon-linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="dropdown-content">
-                    <p>Details about Pressure Wash</p>
-                </div>
-            </li>
-
-            <!-- Add more list items here as needed -->
-            </ul>
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="py-4 bg-dark text-white text-center">
-        <div class="container">
-            <p>&copy; 2024 Interior Painting Services. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
-<script>
-    document.querySelectorAll('.list-group-item').forEach(item => {
-        item.addEventListener('click', function () {
-            this.classList.toggle('active');
-        });
-    });
-</script>
-
-
 
 </html>
